@@ -13,6 +13,8 @@ import ScreenShareIcon from "@mui/icons-material/ScreenShare";
 import StopScreenShareIcon from "@mui/icons-material/StopScreenShare";
 import ChatIcon from "@mui/icons-material/Chat";
 import CloseIcon from "@mui/icons-material/Close";
+import server from "../environment";
+
 import {
   Dialog,
   DialogTitle,
@@ -22,7 +24,7 @@ import {
 } from "@mui/material";
 import { AuthContext } from "../contexts/AuthContext";
 
-const server_url = "http://localhost:3006";
+const server_url = `${server}`;
 
 var connections = {};
 
